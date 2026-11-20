@@ -41,8 +41,8 @@ mkdir -p certs
 openssl req -x509 -newkey rsa:3072 -sha256 -nodes -days 365 \
   -keyout certs/server.key \
   -out certs/server.crt \
-  -subj "/CN=192.168.1.10" \
-  -addext "subjectAltName=IP:192.168.1.10"
+  -subj "/CN=192.168.20.180" \
+  -addext "subjectAltName=IP:192.168.20.180"
 chmod 600 certs/server.key
 ```
 
